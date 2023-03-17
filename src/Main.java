@@ -1,20 +1,17 @@
-# Random Wikipedia walker
+package src;
 
-Using Selenium, create a small program that, starting from the main page https://www.wikipedia.org/, walks trough a sequence of random links and takes a snapshot of the last page.
-The process is as follows:
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
- 1. Navigate to the main page https://www.wikipedia.org/
- 2. Select a random link in the page
- 3. Navigate to the link
- 4. Repeat steps 2 to 3 until you have visited 10 different pages
- 5. Take a snapshot of the current page and save it
+import java.util.List;
+import java.util.Random;
 
-Include the code of the walker and the snapshot in this document.
+public class Main {
 
-## Answer
-
-```
-public static void main(String[] args) {
+    public static void main(String[] args) {
         WebDriver browser;
         FirefoxOptions firefoxOptions = new FirefoxOptions();
 
@@ -55,4 +52,6 @@ public static void main(String[] args) {
             memory.click();
         }
     }
-```
+
+
+}

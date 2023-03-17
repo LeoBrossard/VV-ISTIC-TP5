@@ -1,13 +1,9 @@
-## Page Object Model
+package src;
 
-The image below shows the poll page of the [Simba Organizer](https://github.com/barais/doodlestudent/) application discussed in classes.
+import org.openqa.selenium.WebDriver;
 
-![Simba Organizer Poll page](simba-poll-page.png)
+import java.util.Optional;
 
-Write in this document the interface of a page object class for this page.
-
-## Answer
-```
 public interface poll {
 
     // should return the Interface of the class page object of the homePage
@@ -18,4 +14,3 @@ public interface poll {
 
 
 }
-```
